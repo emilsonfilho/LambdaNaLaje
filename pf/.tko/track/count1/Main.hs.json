@@ -1,0 +1,8 @@
+{
+    "patches": [
+        {
+            "label": "2025-06-03_16-59-34",
+            "content": "countNeg ls = foldl (\\acc x -> if x < 0 then acc+1 else acc) 0 ls\n\nmain :: IO ()\nmain = do\n    a <- readLn :: IO [Int]\n    print $ countNeg a\n"
+        }
+    ]
+}

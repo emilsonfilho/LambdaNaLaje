@@ -1,0 +1,6 @@
+time:2025-06-03 17:08:25, type:DOWN, key:school
+time:2025-06-03 17:17:16, type:PICK, key:school, e:8
+time:2025-06-03 17:17:18, type:TEST, key:school, c:100, e:8
+time:2025-06-03 17:17:18, type:SIZE, key:school, e:8, att:1, lines:15
+time:2025-06-03 17:17:20, type:BACK, key:school, e:8, att:1, lines:15
+time:2025-06-03 17:17:29, type:SELF, key:school, c:100, a:6, s:5, clear:5, fun:5, easy:5, e:9, att:1, lines:15

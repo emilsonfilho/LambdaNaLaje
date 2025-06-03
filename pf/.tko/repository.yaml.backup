@@ -1,0 +1,26 @@
+remote: https://github.com/senapk/funcional_arcade/blob/master/Readme.md
+version: 0.0.1
+database: database
+expanded:
+- conceitos
+- introducao
+- problemas
+tasks:
+  sum2: '{cov:100, appr:6, auto:5, desc:5, desire:1, effort:5, idx:0}'
+  count1: '{cov:100, appr:6, auto:5, desc:5, desire:4, effort:5, idx:0}'
+  final: '{cov:100, appr:6, auto:5, desc:5, desire:3, effort:5, idx:0}'
+  equals: '{cov:100, appr:6, auto:5, desc:5, desire:4, effort:5, idx:0}'
+  inside: '{cov:100, appr:6, auto:5, desc:5, desire:5, effort:5, idx:0}'
+  school: '{cov:100, appr:6, auto:5, desc:5, desire:5, effort:5, idx:0}'
+  min2: '{cov:100, appr:6, auto:5, desc:5, desire:3, effort:5, idx:0}'
+  min3: '{cov:100, appr:6, auto:5, desc:5, desire:3, effort:5, idx:0}'
+  tv: '{cov:100, appr:6, auto:5, desc:5, desire:5, effort:5, idx:0}'
+flags:
+  minimum: 0
+  percent: 0
+  admin: 0
+  skills: 0
+  graph: 0
+new_items: []
+lang: hs
+index: aquecimento

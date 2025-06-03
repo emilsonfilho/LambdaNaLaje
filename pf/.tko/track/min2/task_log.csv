@@ -1,0 +1,9 @@
+time:2025-06-03 17:17:35, type:DOWN, key:min2
+time:2025-06-03 17:17:35, type:PICK, key:min2
+time:2025-06-03 17:23:49, type:PICK, key:min2, e:6
+time:2025-06-03 17:24:07, type:TEST, key:min2, c:100, e:6
+time:2025-06-03 17:24:07, type:SIZE, key:min2, e:6, att:1, lines:7
+time:2025-06-03 17:24:08, type:BACK, key:min2, e:6, att:1, lines:7
+time:2025-06-03 17:24:33, type:SELF, key:min2, c:100, a:6, s:5, clear:5, fun:3, easy:5, e:6, att:1, lines:7
+time:2025-06-03 17:24:56, type:PICK, key:min2, e:7, att:1, lines:7
+time:2025-06-03 17:25:04, type:BACK, key:min2, e:7, att:1, lines:7

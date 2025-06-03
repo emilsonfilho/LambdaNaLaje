@@ -1,0 +1,14 @@
+time:2025-06-03 16:36:10, type:DOWN, key:sum2
+time:2025-06-03 16:37:18, type:PICK, key:sum2, e:1
+time:2025-06-03 16:37:43, type:BACK, key:sum2, e:1
+time:2025-06-03 16:45:29, type:PICK, key:sum2, e:9
+time:2025-06-03 16:45:44, type:BACK, key:sum2, e:9
+time:2025-06-03 16:45:50, type:PICK, key:sum2, e:9
+time:2025-06-03 16:45:56, type:BACK, key:sum2, e:9
+time:2025-06-03 16:47:49, type:PICK, key:sum2, e:11
+time:2025-06-03 16:47:51, type:BACK, key:sum2, e:11
+time:2025-06-03 16:49:26, type:PICK, key:sum2, e:13
+time:2025-06-03 16:49:28, type:TEST, key:sum2, c:100, e:13
+time:2025-06-03 16:49:28, type:SIZE, key:sum2, e:13, att:1, lines:7
+time:2025-06-03 16:53:23, type:BACK, key:sum2, e:17, att:1, lines:7
+time:2025-06-03 16:54:12, type:SELF, key:sum2, c:100, a:6, s:5, clear:5, fun:1, easy:5, e:18, att:1, lines:7

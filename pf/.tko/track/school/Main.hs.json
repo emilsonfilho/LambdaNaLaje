@@ -1,0 +1,8 @@
+{
+    "patches": [
+        {
+            "label": "2025-06-03_17-17-18",
+            "content": "gangorra p1 c1 p2 c2\n    | left == right = 0\n    | left > right = -1\n    | otherwise = 1\n    where\n        left = p1 * c1\n        right =  p2 * c2\n\nmain :: IO ()\nmain = do\n    a <- readLn :: IO Int\n    b <- readLn :: IO Int\n    c <- readLn :: IO Int\n    d <- readLn :: IO Int\n    print $ gangorra a b c d\n"
+        }
+    ]
+}

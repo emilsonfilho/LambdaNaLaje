@@ -1,0 +1,8 @@
+{
+    "patches": [
+        {
+            "label": "2025-06-03_17-24-07",
+            "content": "min2 a b = min a b\n\nmain :: IO ()\nmain = do\n    a <- readLn :: IO Int\n    b <- readLn :: IO Int\n    print $ min2 a b"
+        }
+    ]
+}

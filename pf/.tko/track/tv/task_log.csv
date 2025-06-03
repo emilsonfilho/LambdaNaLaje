@@ -1,0 +1,8 @@
+time:2025-06-03 17:25:40, type:DOWN, key:tv
+time:2025-06-03 17:32:33, type:PICK, key:tv, e:6
+time:2025-06-03 17:32:34, type:TEST, key:tv, c:0, e:6
+time:2025-06-03 17:32:34, type:SIZE, key:tv, e:6, att:1, lines:13
+time:2025-06-03 17:33:16, type:TEST, key:tv, c:100, e:7, att:1, lines:13
+time:2025-06-03 17:33:16, type:SIZE, key:tv, e:7, att:2, lines:13
+time:2025-06-03 17:33:19, type:BACK, key:tv, e:7, att:2, lines:13
+time:2025-06-03 17:33:28, type:SELF, key:tv, c:100, a:6, s:5, clear:5, fun:5, easy:5, e:7, att:2, lines:13

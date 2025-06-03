@@ -1,0 +1,6 @@
+time:2025-06-03 17:25:05, type:DOWN, key:min3
+time:2025-06-03 17:25:23, type:PICK, key:min3, e:0
+time:2025-06-03 17:25:24, type:TEST, key:min3, c:100, e:0
+time:2025-06-03 17:25:24, type:SIZE, key:min3, e:0, att:1, lines:8
+time:2025-06-03 17:25:27, type:BACK, key:min3, e:0, att:1, lines:8
+time:2025-06-03 17:25:37, type:SELF, key:min3, c:100, a:6, s:5, clear:5, fun:3, easy:5, e:0, att:1, lines:8

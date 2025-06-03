@@ -1,0 +1,12 @@
+{
+    "patches": [
+        {
+            "label": "2025-06-03_17-32-34",
+            "content": "@@ -36,12 +36,8 @@\n  * p\n- - 5\n %0A%0Aca\n"
+        },
+        {
+            "label": "2025-06-03_17-33-16",
+            "content": "import Text.Printf\n\ncalcTaxes p = 5 * p - 5\n\ncalc v p = v + (calcTaxes p)/100*v\n\nmain :: IO ()\nmain = do\n    value <- readLn :: IO Float\n    times <- readLn :: IO Float\n    let total = calc value times\n    printf \"%.2f\\n\" (total / times :: Float)\n    printf \"%.2f\\n\" (total :: Float)\n"
+        }
+    ]
+}

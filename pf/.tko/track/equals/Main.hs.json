@@ -1,0 +1,8 @@
+{
+    "patches": [
+        {
+            "label": "2025-06-03_17-03-59",
+            "content": "iguais a b c =\n    if a == b && b == c then 3\n    else\n        if a == b || b == c || a == c then 2\n        else 0\n\nmain :: IO ()\nmain = do\n    a <- readLn :: IO Int\n    b <- readLn :: IO Int\n    c <- readLn :: IO Int\n    print $ iguais a b c\n"
+        }
+    ]
+}
