@@ -1,0 +1,8 @@
+{
+    "patches": [
+        {
+            "label": "2025-06-08_09-01-20",
+            "content": "maior ls = maximum ls\n\nmain :: IO ()\nmain = do\n    a <- readLn :: IO [Int]\n    print $ maior a\n"
+        }
+    ]
+}

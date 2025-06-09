@@ -1,0 +1,16 @@
+{
+    "patches": [
+        {
+            "label": "2025-06-08_09-17-00",
+            "content": "@@ -82,9 +82,9 @@\n  xs \n-%5C\n+!\n = %5B%5D\n"
+        },
+        {
+            "label": "2025-06-08_09-17-17",
+            "content": "@@ -82,9 +82,9 @@\n  xs \n-/\n+%5C\n = %5B%5D\n"
+        },
+        {
+            "label": "2025-06-08_09-17-24",
+            "content": "filtrandoCaudas :: [[Int]] -> [[Int]]\nfiltrandoCaudas xss = [tail xs | xs <- xss, xs /= []]\n\nmain :: IO ()\nmain = do\n    a <- readLn :: IO [[Int]]\n    print $ filtrandoCaudas a\n"
+        }
+    ]
+}

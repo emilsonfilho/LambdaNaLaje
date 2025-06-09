@@ -1,0 +1,8 @@
+{
+    "patches": [
+        {
+            "label": "2025-06-08_20-54-27",
+            "content": "cardValue 1 = 11\ncardValue 11 = 10\ncardValue 12 = 10\ncardValue 13 = 10\ncardValue n = n\n\nadjust cardsSum aceCount\n    | cardsSum <= 21 = cardsSum\n    | aceCount == 0 = cardsSum\n    | otherwise = (adjust (cardsSum - 10)) (aceCount - 1)\n\nblackjack cards = adjust cardsSum aceCount\n    where\n        cardsSum = sum [cardValue card | card <- cards]\n        aceCount = length $ filter (== 1) cards\n\nmain :: IO ()\nmain = do\n    a <- readLn :: IO [Int]\n    print $ blackjack a"
+        }
+    ]
+}

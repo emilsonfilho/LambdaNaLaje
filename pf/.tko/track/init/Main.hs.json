@@ -1,0 +1,8 @@
+{
+    "patches": [
+        {
+            "label": "2025-06-08_09-02-46",
+            "content": "primeiros [] = []\nprimeiros [a] = []\nprimeiros (x:xs) = x : primeiros xs\n\nmain :: IO ()\nmain = do\n    a <- readLn :: IO [Int]\n    print $ primeiros a\n"
+        }
+    ]
+}

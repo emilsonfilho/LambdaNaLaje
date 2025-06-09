@@ -1,0 +1,56 @@
+{
+    "patches": [
+        {
+            "label": "2025-06-08_09-50-16",
+            "content": "@@ -10,18 +10,16 @@\n  = %5B%5B%5D%5D%0A\n---\n partes (\n@@ -99,56 +99,8 @@\n s)))\n-%0Apartes (x:xs) partes xs ++ map (x:) (partes xs)\n %0A%0A--\n"
+        },
+        {
+            "label": "2025-06-08_09-50-47",
+            "content": "@@ -147,16 +147,18 @@\n es xs)%0A%0A\n+--\n main :: \n@@ -163,16 +163,18 @@\n : IO ()%0A\n+--\n main = d\n@@ -175,16 +175,18 @@\n in = do%0A\n+--\n     a %3C-\n@@ -205,16 +205,18 @@\n O %5BInt%5D%0A\n+--\n     prin\n"
+        },
+        {
+            "label": "2025-06-08_09-51-02",
+            "content": "@@ -111,19 +111,16 @@\n s (x:xs)\n- = \n  partes \n"
+        },
+        {
+            "label": "2025-06-08_09-51-54",
+            "content": "@@ -10,16 +10,18 @@\n  = %5B%5B%5D%5D%0A\n+--\n partes (\n@@ -98,18 +98,16 @@\n s xs)))%0A\n---\n partes (\n"
+        },
+        {
+            "label": "2025-06-08_09-52-23",
+            "content": "@@ -29,86 +29,130 @@\n s) =\n-%0A  let rec = partes xs%0A  in map reverse (reverse rec ++ reverse (map (x:) rec)\n+ reverse ((reverse (map (x:) ((partes xs)))) ++ (reverse (partes xs)))%0A--partes (x:xs) =  partes xs ++ map (x:) (partes xs\n )%0A%0Am\n"
+        },
+        {
+            "label": "2025-06-08_09-54-55",
+            "content": "@@ -54,48 +54,62 @@\n s%0A  \n-    comX = map (x:) rec%0A  in rec ++ comX\n+in map reverse (reverse rec ++ reverse (map (x:) rec))\n %0A%0Ama\n"
+        },
+        {
+            "label": "2025-06-08_09-56-05",
+            "content": "@@ -21,44 +21,22 @@\n tes \n-ls =%0A  let (x:xs) = reverse ls%0A     \n+(x:xs) =%0A  let\n  rec\n"
+        },
+        {
+            "label": "2025-06-08_09-58-51",
+            "content": "@@ -60,17 +60,16 @@\n   rec = \n-(\n partes x\n@@ -69,17 +69,16 @@\n artes xs\n-)\n %0A      c\n@@ -87,27 +87,20 @@\n X = \n-(\n map (\n-++%5Bx%5D\n+x:\n ) \n-(\n rec\n-))\n %0A  i\n"
+        },
+        {
+            "label": "2025-06-08_10-00-54",
+            "content": "@@ -14,31 +14,8 @@\n %5B%5D%5D%0A\n-partes %5Ba%5D = %5B%5B%5D, %5Ba%5D%5D%0A\n part\n"
+        },
+        {
+            "label": "2025-06-08_10-54-52",
+            "content": "@@ -4,17 +4,68 @@\n tes \n-ls = go (\n+%5B%5D = %5B%5B%5D%5D%0Apartes %5Ba%5D = %5B%5B%5D, %5Ba%5D%5D%0Apartes ls =%0A  let (x:xs) = \n reve\n@@ -74,81 +74,82 @@\n e ls\n-)\n %0A  \n-where%0A    go %5B%5D = %5B%5B%5D%5D%0A    go (x:xs) = go xs ++ (map (++%5Bx%5D) (go xs))\n+    rec = (partes xs)%0A      comX = (map (++%5Bx%5D) (rec))%0A  in rec ++ comX\n %0A%0Ama\n"
+        },
+        {
+            "label": "2025-06-08_10-57-12",
+            "content": "@@ -77,18 +77,21 @@\n + (map (\n-x:\n+++%5Bx%5D\n ) (go xs\n"
+        },
+        {
+            "label": "2025-06-08_10-57-39",
+            "content": "@@ -81,13 +81,10 @@\n ap (\n-++%5Bx%5D\n+x:\n ) (g\n"
+        },
+        {
+            "label": "2025-06-08_10-57-45",
+            "content": "partes ls = go (reverse ls)\n  where\n    go [] = [[]]\n    go (x:xs) = go xs ++ (map (++[x]) (go xs))\n\nmain :: IO ()\nmain = do\n    a <- readLn :: IO [Int]\n    print $ partes a\n"
+        }
+    ]
+}

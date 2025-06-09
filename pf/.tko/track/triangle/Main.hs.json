@@ -1,0 +1,8 @@
+{
+    "patches": [
+        {
+            "label": "2025-06-08_21-09-41",
+            "content": "line n = take n ([(sum [1..n-1])+1..])\n\ntriangle 0 = []\ntriangle n = [line x | x <- [1..n]]\n\nmain :: IO ()\nmain = do\n    a <- readLn :: IO Int\n    print $ triangle a\n"
+        }
+    ]
+}

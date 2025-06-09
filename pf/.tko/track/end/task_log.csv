@@ -1,0 +1,10 @@
+time:2025-06-08 21:10:20, type:DOWN, key:end
+time:2025-06-08 21:10:22, type:PICK, key:end, e:0
+time:2025-06-08 21:10:28, type:BACK, key:end, e:0
+time:2025-06-08 21:27:58, type:PICK, key:end, e:17
+time:2025-06-08 21:28:01, type:TEST, key:end, c:0, e:17
+time:2025-06-08 21:28:01, type:SIZE, key:end, e:17, att:1, lines:20
+time:2025-06-08 21:28:37, type:TEST, key:end, c:100, e:18, att:1, lines:20
+time:2025-06-08 21:28:37, type:SIZE, key:end, e:18, att:2, lines:20
+time:2025-06-08 21:28:39, type:BACK, key:end, e:18, att:2, lines:20
+time:2025-06-08 21:29:21, type:SELF, key:end, c:100, a:1, s:3, clear:2, fun:5, easy:3, e:19, att:2, lines:20

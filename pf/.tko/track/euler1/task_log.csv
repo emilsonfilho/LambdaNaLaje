@@ -1,0 +1,6 @@
+time:2025-06-08 18:27:04, type:DOWN, key:euler1
+time:2025-06-08 18:35:03, type:PICK, key:euler1, e:7
+time:2025-06-08 18:35:08, type:TEST, key:euler1, c:100, e:8
+time:2025-06-08 18:35:08, type:SIZE, key:euler1, e:8, att:1, lines:8
+time:2025-06-08 18:35:12, type:BACK, key:euler1, e:8, att:1, lines:8
+time:2025-06-08 18:35:26, type:SELF, key:euler1, c:100, a:6, s:5, clear:5, fun:4, easy:4, e:8, att:1, lines:8

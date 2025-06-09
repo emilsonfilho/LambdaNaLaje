@@ -1,0 +1,20 @@
+{
+    "patches": [
+        {
+            "label": "2025-06-08_08-56-22",
+            "content": "@@ -45,49 +45,13 @@\n x = \n-if i %3E= 0 then i else (length ls) + index\n+abs i\n %0A%0Ama\n"
+        },
+        {
+            "label": "2025-06-08_08-57-12",
+            "content": "@@ -15,17 +15,42 @@\n = ls !! \n-(\n+index%0A  where%0A    index = \n if i %3E= \n@@ -82,17 +82,16 @@\n  + index\n-)\n %0A%0Amain :\n"
+        },
+        {
+            "label": "2025-06-08_08-58-40",
+            "content": "@@ -53,16 +53,20 @@\n  ls) + i\n+ndex\n )%0A%0Amain \n"
+        },
+        {
+            "label": "2025-06-08_08-58-56",
+            "content": "elemento i ls = ls !! (if i >= 0 then i else (length ls) + i)\n\nmain :: IO ()\nmain = do\n    a <- readLn :: IO Int\n    b <- readLn :: IO [Int]\n    print $ elemento a b\n"
+        }
+    ]
+}

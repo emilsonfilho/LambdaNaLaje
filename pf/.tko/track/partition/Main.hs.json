@@ -1,0 +1,28 @@
+{
+    "patches": [
+        {
+            "label": "2025-06-08_09-07-20",
+            "content": "@@ -42,33 +42,32 @@\n ue%5D, %5Bx %7C x %3C- l\n-s\n , f x == False%5D)\n"
+        },
+        {
+            "label": "2025-06-08_09-07-31",
+            "content": "@@ -73,89 +73,8 @@\n %5D)%0A%0A\n-splitints' f ls = foldl (%5Cx (ts, fs) -%3E if f x then (x:ts, fs) else (ts, x:fs))%0A%0A\n main\n@@ -164,17 +164,16 @@\n plitints\n-'\n  odd lis\n@@ -220,9 +220,8 @@\n ints\n-'\n  (%3C5\n"
+        },
+        {
+            "label": "2025-06-08_09-10-09",
+            "content": "@@ -152,14 +152,8 @@\n fs))\n- () ls\n %0A%0Ama\n"
+        },
+        {
+            "label": "2025-06-08_09-10-31",
+            "content": "@@ -154,13 +154,8 @@\n )) (\n-%5B%5D,%5B%5D\n ) ls\n"
+        },
+        {
+            "label": "2025-06-08_09-10-36",
+            "content": "@@ -86,15 +86,18 @@\n ' f \n+ls \n = fold\n-r\n+l\n  (%5Cx\n@@ -156,16 +156,19 @@\n  (%5B%5D,%5B%5D)\n+ ls\n %0A%0Amain :\n"
+        },
+        {
+            "label": "2025-06-08_09-14-54",
+            "content": "splitints f ls = ([x | x <- ls, f x == True], [x | x <- ls, f x == False])\n\nsplitints' f = foldr (\\x (ts, fs) -> if f x then (x:ts, fs) else (ts, x:fs)) ([],[])\n\nmain :: IO ()\nmain = do\n    list <- readLn :: IO [Int]\n    putStrLn $ \"odd \" ++ show (splitints' odd list)\n    putStrLn $ \"(<5) \" ++ show (splitints' (<5) list)\n"
+        }
+    ]
+}

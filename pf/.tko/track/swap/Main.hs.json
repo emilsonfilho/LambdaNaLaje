@@ -1,0 +1,20 @@
+{
+    "patches": [
+        {
+            "label": "2025-06-08_18-09-49",
+            "content": "@@ -1,104 +1,4 @@\n-treatIndex i maxIndex%0A    %7C i %3C 0 = maxIndex + i%0A    %7C i %3E maxIndex = maxIndex%0A    %7C otherwise = i%0A%0A\n swap\n@@ -22,17 +22,11 @@\n  ls \n-start end\n+i j\n  = i\n@@ -83,96 +83,8 @@\n ere%0A\n-        len = length ls%0A        i = treatIndex start len%0A        j = treatIndex end len%0A\n     \n"
+        },
+        {
+            "label": "2025-06-08_18-12-17",
+            "content": "@@ -6,19 +6,24 @@\n Index i \n-len\n+maxIndex\n %0A    %7C i\n@@ -29,19 +29,24 @@\n i %3C 0 = \n-len\n+maxIndex\n  + i%0A   \n@@ -52,25 +52,35 @@\n   %7C i %3E \n-len = len\n+maxIndex = maxIndex\n %0A    %7C o\n@@ -171,21 +171,19 @@\n m_i%5D ++ \n-final\n+end\n %0A    whe\n@@ -359,13 +359,11 @@\n     \n-final\n+end\n  = d\n"
+        },
+        {
+            "label": "2025-06-08_18-17-51",
+            "content": "@@ -55,13 +55,9 @@\n  len\n- - 1\n %0A\n+\n     \n@@ -117,22 +117,24 @@\n  ini ++ \n+%5B\n elem_j\n+%5D\n  ++ midd\n@@ -139,22 +139,24 @@\n ddle ++ \n+%5B\n elem_i\n+%5D\n  ++ fina\n@@ -300,42 +300,15 @@\n i = \n-if (i /= j) then %5Bls !! i%5D else %5B%5D\n+ls !! i\n %0A   \n@@ -325,17 +325,15 @@\n j = \n-%5B\n ls !! j\n-%5D\n %0A   \n"
+        },
+        {
+            "label": "2025-06-08_18-26-19",
+            "content": "treatIndex i len\n    | i < 0 = len + i\n    | i > len = len - 1\n    | otherwise = i\n\nswap [] _ _ = []\nswap ls start end = ini ++ elem_j ++ middle ++ elem_i ++ final\n    where\n        len = length ls\n        i = treatIndex start len\n        j = treatIndex end len\n        ini = take i ls\n        elem_i = if (i /= j) then [ls !! i] else []\n        elem_j = [ls !! j]\n        final = drop (j+1) ls\n        middle = take (j-i-1) (drop (i+1) ls)\n\nmain :: IO ()\nmain = do\n    a <- readLn :: IO [Int]\n    b <- readLn :: IO Int\n    c <- readLn :: IO Int\n    print $ swap a b c\n"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "patches": [
+        {
+            "label": "2025-06-08_17-52-34",
+            "content": "@@ -212,14 +212,14 @@\n e = \n-drop i\n+take j\n  ls%0A\n@@ -245,16 +245,24 @@\n e (j-i) \n+(reverse\n  firstSl\n@@ -268,16 +268,17 @@\n lice\n+)\n %0A    in \n fina\n@@ -273,16 +273,24 @@\n %0A    in \n+reverse \n final%0A%0Am\n"
+        },
+        {
+            "label": "2025-06-08_17-55-09",
+            "content": "treatIndexes i ls\n    | i < 0 = (len + i)\n    | i > len = len\n    | otherwise = i\n    where\n        len = length ls\n\nsublist a b ls =\n    let i = treatIndexes a ls\n        j = treatIndexes b ls\n        firstSlice = drop i ls\n        final = take (j-i)  firstSlice\n    in final\n\nmain :: IO ()\nmain = do\n    a <- readLn :: IO Int\n    b <- readLn :: IO Int\n    c <- readLn :: IO [Int]\n    print $ sublist a b c\n"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "patches": [
+        {
+            "label": "2025-06-08_17-59-36",
+            "content": "@@ -30,51 +30,8 @@\n ls =\n- numOdds %60mod%60 2 /= 0%0A  where%0A    numOdds =\n  fol\n"
+        },
+        {
+            "label": "2025-06-08_18-01-58",
+            "content": "paridade [] = False\nparidade ls = numOdds `mod` 2 /= 0\n  where\n    numOdds = foldl (\\acc x -> if x then (acc+1) else acc) 0 ls\n\nmain :: IO ()\nmain = do\n    a <- readLn :: IO [Bool]\n    print $ paridade a\n"
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "patches": [
+        {
+            "label": "2025-06-08_17-07-41",
+            "content": "intersec ls ms = [x | x <- ls, elem x ms]\n\nmain :: IO ()\nmain = do\n    a <- readLn :: IO [Int]\n    b <- readLn :: IO [Int]\n    print $ intersec a b\n"
+        }
+    ]
+}

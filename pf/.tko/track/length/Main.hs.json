@@ -1,0 +1,8 @@
+{
+    "patches": [
+        {
+            "label": "2025-06-08_09-00-46",
+            "content": "total ls = length ls\n\nmain :: IO ()\nmain = do\n    a <- readLn :: IO [Int]\n    print $ total a\n"
+        }
+    ]
+}

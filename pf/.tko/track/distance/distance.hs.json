@@ -1,0 +1,8 @@
+{
+    "patches": [
+        {
+            "label": "2025-06-08_20-13-33",
+            "content": "import Data.Char (ord, chr)\n\nnext c = chr (ord c + 1)\n\nmodifyStr str i ch = ini ++ [ch] ++ end\n    where\n        ini = take i str\n        end = drop (i+1) str\n\ngetInfSupLim lim i len = [x | x <- [-lim..lim], 0 <= (i+x) && (i+x) < len]\n\ncanBePlaced str i el lim len = null [x | x <- getInfSupLim lim i len, str !! (i + x) == el]\n\nchange str i lim el\n    | i >= length str = str\n    | (str !! i) /= '.' = change str (i+1) lim el\n    | el `notElem` ['0'..'9'] = str\n    | otherwise = if (canBePlaced str i el lim (length str)) then (change (modifyStr str i el) (i+1) lim '0') else change str i lim (next el)"
+        }
+    ]
+}

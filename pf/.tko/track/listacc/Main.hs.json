@@ -1,0 +1,16 @@
+{
+    "patches": [
+        {
+            "label": "2025-06-08_21-34-52",
+            "content": "@@ -36,17 +36,16 @@\n  -%3E \n-(\n (sum acc\n ) + \n@@ -40,17 +40,16 @@\n (sum acc\n-)\n  + x):ac\n"
+        },
+        {
+            "label": "2025-06-08_21-35-10",
+            "content": "@@ -18,13 +18,8 @@\n rse \n-(snd \n (fol\n@@ -27,59 +27,44 @@\n l (%5C\n-(sum, xs) x -%3E (x + sum, (x + sum):xs)) (0,\n+acc x -%3E ((sum acc) + x):acc) \n %5B%5D\n-)\n  ls)\n-)\n %0A%0Ama\n"
+        },
+        {
+            "label": "2025-06-08_21-48-47",
+            "content": "listacc ls = reverse (snd (foldl (\\(sum, xs) x -> (x + sum, (x + sum):xs)) (0,[]) ls))\n\nmain :: IO ()\nmain = do\n    a <- readLn :: IO [Int]\n    print $ listacc a\n"
+        }
+    ]
+}

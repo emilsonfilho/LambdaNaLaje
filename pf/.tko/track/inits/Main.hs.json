@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2025-06-08_17-19-36",
+            "content": "@@ -21,42 +21,8 @@\n ls =\n- %5B%5D ++ aux ls%0A  where%0A    aux ls =\n  ini\n"
+        },
+        {
+            "label": "2025-06-08_17-20-23",
+            "content": "@@ -1,12 +1,26 @@\n+inits %5B%5D = %5B%5D%0A\n inits ls = %5B\n@@ -19,18 +19,16 @@\n s ls = %5B\n-%5B%5D\n %5D ++ aux\n@@ -51,32 +51,18 @@\n aux \n-%5B%5D = %5B%5D%0A    aux ls = aux\n+ls = inits\n  (in\n"
+        },
+        {
+            "label": "2025-06-08_17-21-23",
+            "content": "@@ -3,34 +3,68 @@\n its \n-%5B%5D\n+ls\n  = %5B%5B%5D%5D\n-%0Ainits ls = inits\n+ ++ aux ls%0A  where%0A    aux %5B%5D = %5B%5D%0A    aux ls = aux\n  (in\n"
+        },
+        {
+            "label": "2025-06-08_17-23-45",
+            "content": "@@ -19,41 +19,36 @@\n its \n-(x:xs) = %5B%5D : map (x:) (inits xs)\n+ls = inits (init ls) ++ %5Bls%5D\n %0A%0Ama\n"
+        },
+        {
+            "label": "2025-06-08_17-24-19",
+            "content": "inits [] = [[]]\ninits (x:xs) = [] : map (x:) (inits xs)\n\nmain :: IO ()\nmain = do\n    a <- readLn :: IO [Int]\n    print $ inits a\n"
+        }
+    ]
+}

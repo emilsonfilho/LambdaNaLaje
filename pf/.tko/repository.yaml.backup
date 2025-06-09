@@ -5,6 +5,7 @@ expanded:
 - conceitos
 - introducao
 - problemas
+- operações-básicas
 tasks:
   sum2: '{cov:100, appr:6, auto:5, desc:5, desire:1, effort:5, idx:0}'
   count1: '{cov:100, appr:6, auto:5, desc:5, desire:4, effort:5, idx:0}'
@@ -15,6 +16,31 @@ tasks:
   min2: '{cov:100, appr:6, auto:5, desc:5, desire:3, effort:5, idx:0}'
   min3: '{cov:100, appr:6, auto:5, desc:5, desire:3, effort:5, idx:0}'
   tv: '{cov:100, appr:6, auto:5, desc:5, desire:5, effort:5, idx:0}'
+  index: '{cov:100, appr:6, auto:5, desc:5, desire:5, effort:5, idx:0}'
+  contains: '{cov:100, appr:6, auto:5, desc:5, desire:5, effort:5, idx:0}'
+  length: '{cov:100, appr:6, auto:5, desc:0, desire:0, effort:0, idx:0}'
+  maximum: '{cov:100, appr:6, auto:5, desc:0, desire:0, effort:0, idx:0}'
+  init: '{cov:100, appr:6, auto:5, desc:0, desire:0, effort:0, idx:0}'
+  splitAt: '{cov:100, appr:6, auto:5, desc:0, desire:0, effort:0, idx:0}'
+  partition: '{cov:100, appr:6, auto:5, desc:0, desire:0, effort:0, idx:0}'
+  tails: '{cov:100, appr:6, auto:5, desc:0, desire:0, effort:0, idx:0}'
+  oddsum: '{cov:100, appr:6, auto:5, desc:0, desire:0, effort:0, idx:0}'
+  subsets: '{cov:100, appr:5, auto:4, desc:4, desire:4, effort:2, idx:0}'
+  max3: '{cov:100, appr:6, auto:5, desc:5, desire:2, effort:5, idx:0}'
+  fat: '{cov:100, appr:6, auto:5, desc:5, desire:3, effort:5, idx:0}'
+  union: '{cov:100, appr:6, auto:5, desc:5, desire:4, effort:5, idx:0}'
+  intersec: '{cov:100, appr:6, auto:5, desc:5, desire:0, effort:0, idx:0}'
+  inits: '{cov:100, appr:4, auto:4, desc:5, desire:5, effort:4, idx:0}'
+  slice: '{cov:100, appr:4, auto:5, desc:5, desire:5, effort:4, idx:0}'
+  parity: '{cov:100, appr:6, auto:5, desc:5, desire:5, effort:4, idx:0}'
+  swap: '{cov:100, appr:6, auto:5, desc:5, desire:5, effort:3, idx:0}'
+  euler1: '{cov:100, appr:6, auto:5, desc:5, desire:4, effort:4, idx:0}'
+  distance: '{cov:100, appr:1, auto:2, desc:2, desire:5, effort:2, idx:0}'
+  blackjack: '{cov:100, appr:6, auto:5, desc:5, desire:5, effort:4, idx:0}'
+  lines: '{cov:100, appr:5, auto:5, desc:4, desire:4, effort:4, idx:0}'
+  triangle: '{cov:100, appr:6, auto:5, desc:5, desire:3, effort:5, idx:0}'
+  end: '{cov:100, appr:1, auto:3, desc:2, desire:5, effort:3, idx:0}'
+  listacc: '{cov:100, appr:6, auto:5, desc:4, desire:5, effort:3, idx:0}'
 flags:
   minimum: 0
   percent: 0
@@ -23,4 +49,4 @@ flags:
   graph: 0
 new_items: []
 lang: hs
-index: aquecimento
+index: listacc

@@ -1,0 +1,12 @@
+{
+    "patches": [
+        {
+            "label": "2025-06-08_16-58-18",
+            "content": "@@ -15,18 +15,18 @@\n fold\n-l\n+r\n  (%5C\n+x \n acc \n-x \n -%3E i\n@@ -31,17 +31,16 @@\n  if not \n-(\n elem x a\n@@ -41,17 +41,16 @@\n em x acc\n-)\n  then ac\n"
+        },
+        {
+            "label": "2025-06-08_17-01-04",
+            "content": "uniao ls ms = foldl (\\acc x -> if not (elem x acc) then acc ++ [x] else acc) ls ms\n\nmain :: IO ()\nmain = do\n    a <- readLn :: IO [Int]\n    b <- readLn :: IO [Int]\n    print $ uniao a b\n"
+        }
+    ]
+}

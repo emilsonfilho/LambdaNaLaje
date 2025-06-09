@@ -1,0 +1,18 @@
+time:2025-06-08 18:35:31, type:DOWN, key:distance
+time:2025-06-08 20:13:31, type:PICK, key:distance
+time:2025-06-08 20:13:33, type:TEST, key:distance, c:0, e:0
+time:2025-06-08 20:13:33, type:SIZE, key:distance, e:0, att:1, lines:107
+time:2025-06-08 20:14:42, type:TEST, key:distance, c:0, e:1, att:1, lines:107
+time:2025-06-08 20:14:42, type:SIZE, key:distance, e:1, att:2, lines:127
+time:2025-06-08 20:15:06, type:TEST, key:distance, c:57, e:1, att:2, lines:127
+time:2025-06-08 20:15:06, type:SIZE, key:distance, e:1, att:3, lines:128
+time:2025-06-08 20:15:12, type:TEST, key:distance, c:57, e:1, att:3, lines:128
+time:2025-06-08 20:28:09, type:BACK, key:distance, e:14, att:3, lines:128
+time:2025-06-08 20:28:50, type:SELF, key:distance, c:50, a:6, s:5, clear:2, fun:5, easy:2, e:15, att:3, lines:128
+time:2025-06-08 20:34:30, type:PICK, key:distance, e:20, att:3, lines:128
+time:2025-06-08 20:34:33, type:TEST, key:distance, c:0, e:21, att:3, lines:128
+time:2025-06-08 20:34:34, type:SIZE, key:distance, e:21, att:4, lines:123
+time:2025-06-08 20:35:17, type:TEST, key:distance, c:100, e:21, att:4, lines:123
+time:2025-06-08 20:35:26, type:BACK, key:distance, e:21, att:4, lines:123
+time:2025-06-08 20:35:37, type:SELF, key:distance, c:100, a:1, s:2, clear:2, fun:5, easy:2, e:22, att:4, lines:123
+time:2025-06-08 20:40:39, type:SELF, key:distance, c:100, a:1, s:2, clear:2, fun:5, easy:2, e:27, att:4, lines:123

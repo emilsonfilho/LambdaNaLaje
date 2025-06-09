@@ -1,0 +1,12 @@
+{
+    "patches": [
+        {
+            "label": "2025-06-08_11-01-04",
+            "content": "@@ -1,19 +1,4 @@\n-fatorial 0 = 1%0A\n fato\n"
+        },
+        {
+            "label": "2025-06-08_16-55-02",
+            "content": "fatorial 0 = 1\nfatorial 1 = 1\nfatorial 2 = 2\nfatorial n = n * fatorial (n-1)\n\nmain :: IO ()\nmain = do\n    a <- readLn :: IO Int\n    print $ fatorial a\n"
+        }
+    ]
+}

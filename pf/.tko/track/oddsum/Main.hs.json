@@ -1,0 +1,8 @@
+{
+    "patches": [
+        {
+            "label": "2025-06-08_09-21-00",
+            "content": "isEven x = x `mod` 2 == 0\n\nsomaImpares ls = foldl (\\sum x -> if not (isEven x) then sum + x else sum) 0 ls\n\nmain :: IO ()\nmain = do\n    a <- readLn :: IO [Int]\n    print $ somaImpares a\n"
+        }
+    ]
+}

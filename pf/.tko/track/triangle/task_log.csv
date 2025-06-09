@@ -1,0 +1,8 @@
+time:2025-06-08 21:06:58, type:DOWN, key:triangle
+time:2025-06-08 21:06:59, type:PICK, key:triangle, e:0
+time:2025-06-08 21:07:38, type:BACK, key:triangle, e:0
+time:2025-06-08 21:09:36, type:PICK, key:triangle, e:2
+time:2025-06-08 21:09:41, type:TEST, key:triangle, c:100, e:2
+time:2025-06-08 21:09:41, type:SIZE, key:triangle, e:2, att:1, lines:9
+time:2025-06-08 21:09:42, type:BACK, key:triangle, e:2, att:1, lines:9
+time:2025-06-08 21:10:13, type:SELF, key:triangle, c:100, a:6, s:5, clear:5, fun:3, easy:5, e:3, att:1, lines:9

@@ -1,0 +1,12 @@
+{
+    "patches": [
+        {
+            "label": "2025-06-08_21-28-01",
+            "content": "@@ -195,21 +195,12 @@\n  -%3E \n-printf %22%25.2f%22\n+show\n  (re\n"
+        },
+        {
+            "label": "2025-06-08_21-28-37",
+            "content": "import Data.List ( intercalate ) \nimport Text.Printf ( printf )\n\nprocess :: String -> String\nprocess line = case words line of\n    [\"sum\", x, y] -> show (readInt x + readInt y)\n    [\"half\", x]   -> printf \"%.2f\" (readDouble x / 2)\n    _             -> error $ \"Invalid command: \" ++ line\n    where\n        readInt :: String -> Int\n        readInt = read\n\n        readDouble :: String -> Double\n        readDouble = read\n\nmain :: IO ()\nmain = do\n    line_list <- takeWhile (/=\"end\") . lines <$> getContents\n    putStrLn $ intercalate \"\\n\" . map process $ line_list\n    \n"
+        }
+    ]
+}
